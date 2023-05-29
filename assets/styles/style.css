@@ -1,0 +1,153 @@
+header{
+    height: auto;
+}
+nav {
+    height: auto;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex !important;
+    justify-content: flex-end;
+    gap: 3rem;
+    align-items: center;
+}
+#Upcoming {
+    border: 1px solid gray;
+    text-align: center;
+}
+#past {
+    text-align: center;
+    border: 1px solid gray;
+}
+.nav-link {
+    border: 1px solid gray;
+    background-color: red;
+    color: white !important;
+}
+main {
+    background-color: blue;
+    height: auto;
+    color: white;
+}
+
+.carousel {
+    height: 10vh !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+h1, h2 {
+    text-align: center;
+}
+.searchlogo {
+    transform: scaleX(-1);
+}
+form {
+    width: 30%;
+}
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+    align-items: center;
+    height: auto;
+    background-color: white;
+    color: black;
+}
+.box-cards {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+}
+
+.card {
+    margin: 5.7rem 0 5rem 0;
+    height: 25rem;
+}
+
+.img-box {
+    height: 8rem;
+    object-fit: cover;
+}
+
+.price-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-contact {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 66vh;
+}
+
+.contact-form {
+    width: auto;
+}
+
+.send-btn {
+    margin-left: 10rem;
+    margin-top: 1rem;
+}
+
+.details-div {
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details-div img {
+    height: 50%;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+
+.info-details {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.stats-section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+table, th, td {
+    border: 3px solid white;
+    height: 3rem;
+    margin: 3rem 0;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    height: 14vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
