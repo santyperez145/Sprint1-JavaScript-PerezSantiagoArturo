@@ -1,4 +1,4 @@
-let card = document.getElementById("details-div");
+let card = document.getElementById("details-div"); 
 
 const params = new URLSearchParams(location.search)
 

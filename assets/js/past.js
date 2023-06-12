@@ -1,18 +1,16 @@
 let card = document.getElementById("box-cards");
 const checkboxesdiv = document.getElementById('search')
 
-// Creo el array
 const categories = data.events.map(events => events.category)
 
-// Creo un set para eliminar los repetidos
 const categoriesSinRepetidos = new Set(categories)
-// lo vuelvo a pasar a array para tener disponible los metodos de array
-const arrayCategoriesSinRepetidos = Array.from(categoriesSinRepetidos)
-// hacer los checkbox dinamicos
-pintarCheckbox(arrayCategoriesSinRepetidos, checkboxesdiv)
-// primera carga de los mentores
 
-// Obtener referencia a los checkboxes
+const arrayCategoriesSinRepetidos = Array.from(categoriesSinRepetidos)
+
+pintarCheckbox(arrayCategoriesSinRepetidos, checkboxesdiv)
+
+
+
 
 function crearCheck(category) {
   const div = document.createElement('DIV')
@@ -22,7 +20,7 @@ function crearCheck(category) {
   input.type = "checkbox"
   input.className = "form-check-input"
   input.value = category
-  input.id = `${category}-check` //-> JS-check
+  input.id = `${category}-check`
   input.name = "category"
 
   const label = document.createElement('LABEL')
@@ -37,7 +35,7 @@ function crearCheck(category) {
   return div
 }
 
-// una funcion que lleva los checkbox al dom
+
 function pintarCheckbox(categories, elemento) {
 
   const fragment = document.createDocumentFragment()
@@ -96,6 +94,7 @@ function filterCards() {
     return categoryNameMatch && (nameMatch || descriptionMatch);
   });
 
+  //filtro por fechas
   let currentDate = new Date(data.currentDate);
   let pastEvents = filteredEvents.filter((event) => {
     let eventDate = new Date(event.date);

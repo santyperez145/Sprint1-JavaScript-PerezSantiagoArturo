@@ -96,6 +96,7 @@ function filterCards() {
     return categoryNameMatch && (nameMatch || descriptionMatch);
   });
 
+  //filtro por fechas
   let currentDate = new Date(data.currentDate);
   let pastEvents = filteredEvents.filter((event) => {
     let eventDate = new Date(event.date);
